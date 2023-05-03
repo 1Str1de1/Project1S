@@ -49,7 +49,7 @@ public class Beer {
         this.quantity = quantity;
     }
 
-    public int getQuatity() {
+    public int getQuantity() {
         return quantity;
     }
 

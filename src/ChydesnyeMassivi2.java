@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ChydesnyeMassivi2 {
@@ -5,7 +6,7 @@ public class ChydesnyeMassivi2 {
         Scanner sc = new Scanner(System.in);
         int[] nums = {1, 2, 2, 3};
         int k;
-        int quantity = 0;
+        int j = 0;
         while (true) {
             System.out.println("Введите число: ");
             if (sc.hasNextInt()) {
@@ -15,18 +16,15 @@ public class ChydesnyeMassivi2 {
             sc.nextLine();
         }
         sc.close();
-        for (int i = 0, j = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             if (nums[i] == k) {
                 int temp = nums[i];
                 nums[i] = nums[j];
                 nums[j] = temp;
                 j++;
-                quantity++;
             }
         }
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " ");
-        }
-        System.out.println("Количество искомых элементов: " + quantity);
+        System.out.println(Arrays.toString(nums));
+        System.out.println("Количество искомых элементов: " + j);
     }
-}
+    }
