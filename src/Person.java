@@ -59,7 +59,13 @@ public class Person {
     }
 
     public void buyingSomeBeer() {
-        System.out.println("- Добрый вечер, что для вас?");
-        System.out.println("- Дайте мне пожалуйста " + beer.getQuantity() + " банки " + beer.getBrand() + "'а по " + beer.getVolume() + " л пожалуйста");
+        if (age < 18) {
+            System.out.println("- Добрый вечер, что для вас?");
+            System.out.println("- Дайте мне пожалуйста " + beer.getQuantity() + " банки " + beer.getBrand() + "'а по " + beer.getVolume() + " л пожалуйста");
+            System.out.println("- Рано тебе ещё пива, купи лучше мороженку.");
+        } else {
+            System.out.println("- Добрый вечер, что для вас?");
+            System.out.println("- Дайте мне пожалуйста " + beer.getQuantity() + " банки " + beer.getBrand() + "'а по " + beer.getVolume() + " л пожалуйста");
+        }
     }
 }
