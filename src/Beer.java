@@ -7,22 +7,22 @@ public class Beer {
         beer1.setQuantity(2);
         beer1.setVolume(0.5);
 
-        beer1.drinkBeer();
-        System.out.println();
-
         beer1.complimentTheBeer();
         System.out.println();
-
-        beer1.giveMeThePivo();
     }
 
     private String country;
     private String brand;
     private double volume;
     private int quantity;
+    private Person person;
 
     public void setCountry(String country) {
-        this.country = country;
+        if (country.isEmpty()) {
+            System.out.println("Страна не может не иметь названия");
+        } else {
+            this.country = country;
+        }
     }
 
     public String getCountry() {
@@ -30,7 +30,11 @@ public class Beer {
     }
 
     public void setBrand(String brand) {
-        this.brand = brand;
+        if (brand.isEmpty()) {
+            System.out.println("Пиво обязано иметь название!");
+        } else {
+            this.brand = brand;
+        }
     }
 
     public String getBrand() {
@@ -38,23 +42,35 @@ public class Beer {
     }
 
     public void setVolume(double volume) {
-        this.volume = volume;
+        if (volume < 0) {
+            return;
+        } else {
+            this.volume = volume;
+        }
     }
 
     public double getVolume() {
         return volume;
     }
 
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
+
     public void setQuantity(int quantity) {
-        this.quantity = quantity;
+        if (quantity < 0) {
+            return;
+        } else {
+            this.quantity = quantity;
+        }
     }
 
     public int getQuantity() {
         return quantity;
-    }
-
-    public void drinkBeer() {
-        System.out.println("Slurp-Slurp... Ahhh..." + brand + " is so freacking good");
     }
 
     public void complimentTheBeer() {
@@ -65,11 +81,6 @@ public class Beer {
         System.out.println("- Ну как его похвалить? Ну заебись пиво, пиздатое пиво. Как его ещё похвалить, блять? :D");
         System.out.println("- А ещё пару красивых слов?");
         System.out.println("- Невъебенное пиво. Жидкое золото!");
-    }
-
-    public void giveMeThePivo() {
-        System.out.println("- Добрый вечер, что для вас?");
-        System.out.println("- Дайте мне пожалуйста " + quantity + " банки " + brand + "'а по " + volume + " л пожалуйста");
     }
 }
 

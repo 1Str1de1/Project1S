@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class ChydesnyeMassivi {
     public static void main(String[] args) {
@@ -10,8 +11,7 @@ public class ChydesnyeMassivi {
                 j++;
             }
         }
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + " ");
+        System.out.println(Arrays.toString(nums));
         }
     }
-}
+
