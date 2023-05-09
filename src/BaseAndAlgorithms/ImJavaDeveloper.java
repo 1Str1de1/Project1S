@@ -1,3 +1,5 @@
+package BaseAndAlgorithms;
+
 import java.util.Scanner;
 
 public class ImJavaDeveloper {

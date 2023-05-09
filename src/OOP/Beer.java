@@ -1,3 +1,4 @@
+package OOP;
 
 public class Beer {
     public static void main(String[] args) {
@@ -75,8 +76,7 @@ public class Beer {
 
     public void complimentTheBeer() {
         System.out.println("- Какие сорта пива предпочитаете?");
-        System.out.println("- Вот брал недавно пиво из прекрасной страны под названием " + country + " марки " + brand +
-                ". Нормальное пиво. Пить можно.");
+        System.out.println("- Вот брал недавно пиво из прекрасной страны под названием " + country + " марки " + brand + ". Нормальное пиво. Пить можно.");
         System.out.println("- Похвалите ещё пиво");
         System.out.println("- Ну как его похвалить? Ну заебись пиво, пиздатое пиво. Как его ещё похвалить, блять? :D");
         System.out.println("- А ещё пару красивых слов?");

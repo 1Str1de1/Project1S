@@ -1,3 +1,5 @@
+package BaseAndAlgorithms;
+
 public class PerestanovkaBukv {
     public static void main(String[] args){
         String abc0 = "abc";

@@ -1,3 +1,5 @@
+package OOP;
+
 public class PersonWithBeer {
     public static void main(String[] args) {
         Beer beer1 = new Beer();
