@@ -7,10 +7,10 @@ public class Person {
         person1.setName("Chris");
         person1.setBeer(person1.beer);
 
-        person1.drinkBeer();
-
+        person1.getDescription();
     }
 
+    private static final String description = "Just a usual human";
     private String name;
     private int age;
     private Beer beer;
@@ -54,6 +54,10 @@ public class Person {
 
     public Beer getBeer() {
         return beer;
+    }
+
+    public void getDescription() {
+        System.out.println(description);
     }
 
     public void drinkBeer() {
