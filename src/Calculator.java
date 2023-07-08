@@ -22,6 +22,7 @@ public class Calculator {
                     "*: multiply by a number\n" +
                     "/: divide by a number\n" +
                     "0: exit\n" +
+                    "c: reset\n" +
                     "The result is:\n" + result);
 
             command = scanner.nextLine();
@@ -29,48 +30,70 @@ public class Calculator {
             switch (command) {
 
                 case "+":
-
-
-
                     System.out.println("Which number do tou want to add?");
 
-                    variable = scannerDouble.nextDouble();
+                    if (scannerDouble.hasNextDouble()) {
 
-                    result += variable;
+                        variable = scannerDouble.nextDouble();
+
+                        result += variable;
+
+                    } else
+
+                        System.out.println("You entered not a number! Please try again.\n");
 
                     break;
 
                 case "-":
+                    System.out.println("Which number do you want to subtract?");
 
-                    System.out.println("Which number do tou want to subtract?");
+                    if (scannerDouble.hasNextDouble()) {
 
-                    variable = scannerDouble.nextDouble();
+                        variable = scannerDouble.nextDouble();
 
-                    result -= variable;
+                        result -= variable;
+
+                    } else
+
+                        System.out.println("You entered not a number! Please try again.\n");
 
                     break;
 
                 case "*":
-
                     System.out.println("By which number do tou want to multiply?");
 
-                    variable = scannerDouble.nextDouble();
+                    if (scannerDouble.hasNextDouble()) {
 
-                    result *= variable;
+                        variable = scannerDouble.nextDouble();
+
+                        result *= variable;
+
+                    } else
+
+                        System.out.println("You entered not a number! Please try again.\n");
 
                     break;
 
                 case "/":
-
                     System.out.println("By which number do tou want to divide?");
 
-                    variable = scannerDouble.nextDouble();
+                    if (scannerDouble.hasNextDouble()) {
 
-                    result /= variable;
+                        variable = scannerDouble.nextDouble();
+
+                        result /= variable;
+
+                    } else
+
+                        System.out.println("You entered not a number! Please try again.\n");
 
                     break;
 
                 case "0":
+                    break;
+
+                case "c":
+                    result = 0;
                     break;
 
                 default:
