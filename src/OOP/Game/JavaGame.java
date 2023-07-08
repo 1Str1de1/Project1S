@@ -60,6 +60,10 @@ public class JavaGame {
     }
 
     private static void startNewGame() {
+        Game game = new Game(sizeX, sizeY, amountOfEnemies,
+                transistorsAmountNeeded, moves);
+
+        game.fillFieldWithEmptyObjects();
 
     }
 }

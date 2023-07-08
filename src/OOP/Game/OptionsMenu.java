@@ -42,7 +42,7 @@ public class OptionsMenu {
                     System.out.println("Enter a new amount of transistors: ");
                     JavaGame.transistorsAmountNeeded = scanner.nextInt();
 
-                    System.out.println("Enter a new amount of movs: ");
+                    System.out.println("Enter a new amount of moves: ");
                     JavaGame.moves = scanner.nextInt();
 
                     break;
