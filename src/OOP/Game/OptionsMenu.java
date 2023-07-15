@@ -25,7 +25,8 @@ public class OptionsMenu {
                             "\ncolumns: " + JavaGame.sizeY +
                             "\nenemies: " + JavaGame.amountOfEnemies +
                             "\ntransistors: " + JavaGame.transistorsAmountNeeded +
-                            "\nmoves: " + JavaGame.moves + "\n");
+                            "\nmoves: " + JavaGame.moves +
+                            "\nflowers:" + JavaGame.amountOfFlowers + "\n");
                     break;
 
                 case 2:
@@ -44,6 +45,9 @@ public class OptionsMenu {
 
                     System.out.println("Enter a new amount of moves: ");
                     JavaGame.moves = scanner.nextInt();
+
+                    System.out.println("Enter a new amount of flowers: ");
+                    JavaGame.amountOfFlowers = scanner.nextInt();
 
                     break;
 

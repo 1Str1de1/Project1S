@@ -39,7 +39,7 @@ public class Field {
 
             for (int j = 0; j < sizeY; j++) {
 
-                System.out.println(field[i][j].getSymbol());
+                System.out.print(field[i][j].getSymbol());
 
             }
         }

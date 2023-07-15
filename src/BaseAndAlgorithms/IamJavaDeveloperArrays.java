@@ -26,17 +26,16 @@ public class IamJavaDeveloperArrays {
             for (int j = 0; j < col - subsentence[i].length(); j++) {
                 space += " ";
             }
-            sum[i] = "* "+subsentence[i]+space+" *";
+            sum[i] = "* " + subsentence[i] + space + " *";
             space = "";
         }
-        String[] sum1 = new String[rows+2];
-        for (int i = 0; i < rows+2;i++){
-            if ((i <= rows)&(i != 0)){
-                sum1[i] = sum[i-1];
-            }
-            else sum1[i] = "";
-            for (int j = 0; j < col+4;j++){
-                if((i == 0)||(i == rows+1)){
+        String[] sum1 = new String[rows + 2];
+        for (int i = 0; i < rows + 2; i++) {
+            if ((i <= rows) & (i != 0)) {
+                sum1[i] = sum[i - 1];
+            } else sum1[i] = "";
+            for (int j = 0; j < col + 4; j++) {
+                if ((i == 0) || (i == rows + 1)) {
                     sum1[i] += "*";
                 }
             }

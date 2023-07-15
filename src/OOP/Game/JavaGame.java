@@ -8,6 +8,7 @@ public class JavaGame {
     public static int amountOfEnemies = 5;
     public static int transistorsAmountNeeded = 100;
     public static int moves = 40;
+    public static int amountOfFlowers = 10;
 
     public static void main(String[] args) {
 
@@ -61,9 +62,11 @@ public class JavaGame {
 
     private static void startNewGame() {
         Game game = new Game(sizeX, sizeY, amountOfEnemies,
-                transistorsAmountNeeded, moves);
+                transistorsAmountNeeded, moves, amountOfFlowers);
 
         game.fillFieldWithEmptyObjects();
+
+        game.startGame();
 
     }
 }
