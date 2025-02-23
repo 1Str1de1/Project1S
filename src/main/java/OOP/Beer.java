@@ -16,7 +16,7 @@ public class Beer {
     private String brand;
     private double volume;
     private int quantity;
-    private Person person;
+    private PersonOutdate personOutdate;
 
     public void setCountry(String country) {
         if (country.isEmpty()) {
@@ -54,12 +54,12 @@ public class Beer {
         return volume;
     }
 
-    public Person getPerson() {
-        return person;
+    public PersonOutdate getPerson() {
+        return personOutdate;
     }
 
-    public void setPerson(Person person) {
-        this.person = person;
+    public void setPerson(PersonOutdate personOutdate) {
+        this.personOutdate = personOutdate;
     }
 
     public void setQuantity(int quantity) {

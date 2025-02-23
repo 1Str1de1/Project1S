@@ -1,13 +1,13 @@
 package OOP;
 
-public class Person {
+public class PersonOutdate {
     public static void main(String[] args) {
-        Person person1 = new Person();
-        person1.setAge(25);
-        person1.setName("Chris");
-        person1.setBeer(person1.beer);
+        PersonOutdate personOutdate1 = new PersonOutdate();
+        personOutdate1.setAge(25);
+        personOutdate1.setName("Chris");
+        personOutdate1.setBeer(personOutdate1.beer);
 
-        person1.getDescription();
+        personOutdate1.getDescription();
     }
 
     private static final String description = "Just a usual human";
@@ -15,11 +15,11 @@ public class Person {
     private int age;
     private Beer beer;
 
-    public Person() {
+    public PersonOutdate() {
 
     }
 
-    public Person(String name, int age) {
+    public PersonOutdate(String name, int age) {
         this.name = name;
         this.age = age;
     }

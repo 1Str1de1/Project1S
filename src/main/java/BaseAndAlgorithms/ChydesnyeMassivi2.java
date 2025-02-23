@@ -29,4 +29,4 @@ public class ChydesnyeMassivi2 {
         System.out.println(Arrays.toString(nums));
         System.out.println("Количество искомых элементов: " + j);
     }
-    }
+}

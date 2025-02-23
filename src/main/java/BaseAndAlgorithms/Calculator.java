@@ -1,9 +1,10 @@
+package BaseAndAlgorithms;
+
 import java.util.Scanner;
 
 public class Calculator {
 
     private static double result = 0;
-
     public static double variable;
 
     public static void main(String[] args) {
@@ -38,10 +39,7 @@ public class Calculator {
 
                         result += variable;
 
-                    } else
-
-                        System.out.println("You entered not a number! Please try again.\n");
-
+                    } else notANumber();
                     break;
 
                 case "-":
@@ -53,10 +51,7 @@ public class Calculator {
 
                         result -= variable;
 
-                    } else
-
-                        System.out.println("You entered not a number! Please try again.\n");
-
+                    } else notANumber();
                     break;
 
                 case "*":
@@ -68,10 +63,7 @@ public class Calculator {
 
                         result *= variable;
 
-                    } else
-
-                        System.out.println("You entered not a number! Please try again.\n");
-
+                    } else notANumber();
                     break;
 
                 case "/":
@@ -83,10 +75,7 @@ public class Calculator {
 
                         result /= variable;
 
-                    } else
-
-                        System.out.println("You entered not a number! Please try again.\n");
-
+                    } else notANumber();
                     break;
 
                 case "0":
@@ -101,7 +90,11 @@ public class Calculator {
             }
 
         } while (!command.equals("0"));
+    }
 
+    public static void notANumber() {
+        System.out.println("You entered not a number! Please try again.\n");
 
     }
+
 }
